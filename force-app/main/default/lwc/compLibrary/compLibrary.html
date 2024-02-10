@@ -1,0 +1,34 @@
+<template>
+    <lightning-card title="Componant Library" icon-name="custom:custom15">
+        <div class="slds-m-around_medium">
+
+<!--avatar-->
+<br>
+<hr>
+
+<lightning-avatar size="large" variant="circle"  src="https://www.lightningdesignsystem.com/assets/images/avatar2.jpg" initials="CR" fallback-icon-name="standard:person_account" alternative-text="Cindy Rice" class="slds-m-right_small"></lightning-avatar>
+
+
+<!--checkbox group-->
+<br>
+<hr>
+
+<lightning-checkbox-group name="Checkbox Group"
+label="Checkbox Group"
+options={options}
+value={value}
+onchange={handleChange}></lightning-checkbox-group>
+<p>Selected Values are: {selectedValues}</p>
+
+
+<!--Button-->
+<br>
+<hr>
+
+
+<lightning-button variant="brand" label="Birlikte Soru Çözengiller" title="Primary action" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+
+
+        </div>
+    </lightning-card>
+</template>
